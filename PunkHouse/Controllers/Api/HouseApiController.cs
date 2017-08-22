@@ -32,7 +32,8 @@ namespace PunkHouse.Controllers.Api
                     Expenses = new List<Expense>()
                     {
                         new Expense(){Name = "Gas", ExpenseType = ExpenseType.Bill, Total = 345.80m},
-                        new Expense(){Name = "Rent", ExpenseType = ExpenseType.Rent, Total = 2300.00m}
+                        new Expense(){Name = "Rent", ExpenseType = ExpenseType.Rent, Total = 2300.00m},
+                        new Expense(){Name = "Trash bags", ExpenseType = ExpenseType.Supply, Total = 10.00m}
                     }
 
                 });
