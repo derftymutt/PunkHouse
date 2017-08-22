@@ -12,11 +12,12 @@ namespace PunkHouse.Models
         public string Address2 { get; set; }
         public List<HouseMate> HouseMates { get; set; }
         public List<Expense> Expenses { get; set; }
-        public DateTime DateCreationTime { get; set; }
+        public DateTimeOffset CreationDateTime { get; set; }
 
 
         public House()
         {
+            CreationDateTime = DateTimeOffset.Now;
         }
     }
 }

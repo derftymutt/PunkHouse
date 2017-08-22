@@ -11,10 +11,14 @@ namespace PunkHouse.Models
         public decimal Total { get; set; }
         public DateTime DueDate { get; set; }
         public ExpenseType ExpenseType { get; set; }
-        public DateTime DateCreationTime { get; set; }
+        public bool IsPaid { get; set; }
+        public DateTimeOffset CreationDateTime { get; set; }
 
         public Expense()
         {
+            CreationDateTime = DateTimeOffset.Now;
+            IsPaid = false;
+
         }
     }
 }

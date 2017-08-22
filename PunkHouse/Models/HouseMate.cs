@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace PunkHouse.Models
 {
     public class HouseMate
@@ -6,13 +8,13 @@ namespace PunkHouse.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-       // [ForeignKey]
+        [ForeignKey("HouseId")]
         public int HouseId { get; set; }
-        public DateTime DateCreationTime { get; set; }
+        public DateTimeOffset CreationDateTime { get; set; }
 
         public HouseMate()
         {
-            DateCreationTime = new DateTime();
+            CreationDateTime = DateTimeOffset.Now;
         }
     }
 }

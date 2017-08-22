@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="EntityFramework" Version="6.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,5 +16,7 @@
 
   <ItemGroup>
     <Folder Include="Models\EnumsAndConstants\" />
+    <Folder Include="Models\DbContexts\" />
+    <Folder Include="Controllers\Api\" />
   </ItemGroup>
 </Project>
