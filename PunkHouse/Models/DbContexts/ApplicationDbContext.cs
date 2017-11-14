@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PunkHouse.Models.DbContexts
 {
-    public class HouseContext : DbContext
+    public class ApplicationDBContext : DbContext
     {
-        public HouseContext(DbContextOptions<HouseContext> options)
+        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options)
             : base(options)
         {
         }

@@ -16,7 +16,5 @@
 
   <ItemGroup>
     <Folder Include="Models\EnumsAndConstants\" />
-    <Folder Include="Models\DbContexts\" />
-    <Folder Include="Controllers\Api\" />
   </ItemGroup>
 </Project>

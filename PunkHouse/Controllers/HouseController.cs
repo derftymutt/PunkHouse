@@ -9,11 +9,12 @@ using PunkHouse.Models.EnumsandConstants;
 namespace PunkHouse.Controllers.Api
 {
     [Route("api/houses")]
-    public class HouseApiController : Controller
+
+    public class HouseController : Controller
     {
         private readonly HouseContext _context;
 
-        public HouseApiController(HouseContext context)
+        public HouseController(HouseContext context)
         {
             _context = context;
 
