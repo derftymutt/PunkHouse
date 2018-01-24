@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using PunkHouse.Models;
 
-namespace PunkHouse.Models.DbContexts
+namespace PunkHouse.Data
 {
     public class ApplicationDBContext : DbContext
     {

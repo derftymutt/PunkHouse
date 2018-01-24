@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using PunkHouse.Models;
-using PunkHouse.Models.DbContexts;
+using PunkHouse.Data;
 using PunkHouse.Models.EnumsandConstants;
 
 namespace PunkHouse.Controllers.Api
@@ -12,9 +12,9 @@ namespace PunkHouse.Controllers.Api
 
     public class HouseController : Controller
     {
-        private readonly HouseContext _context;
+        private readonly ApplicationDBContext _context;
 
-        public HouseController(HouseContext context)
+        public HouseController(ApplicationDBContext context)
         {
             _context = context;
 

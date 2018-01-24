@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using PunkHouse.Models.DbContexts;
+using PunkHouse.Data;
 
 namespace PunkHouse
 {
@@ -23,7 +23,7 @@ namespace PunkHouse
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<HouseContext>(opt => opt.UseInMemoryDatabase("testDatabase"));
+            services.AddDbContext<ApplicationDBContext>(opt => opt.UseInMemoryDatabase("testDatabase"));
             services.AddMvc();
         }
 
