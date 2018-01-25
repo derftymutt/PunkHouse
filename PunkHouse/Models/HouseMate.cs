@@ -6,15 +6,17 @@ namespace PunkHouse.Models
     public class HouseMate
     {
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
         [ForeignKey("HouseId")]
         public int HouseId { get; set; }
-        public DateTimeOffset CreationDateTime { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTimeOffset DateCreated { get; set; }
+        public DateTimeOffset DateModified { get; set; }
 
         public HouseMate()
         {
-            CreationDateTime = DateTimeOffset.Now;
+            DateCreated = DateTimeOffset.Now;
+            DateModified = DateTimeOffset.Now;
         }
     }
 }

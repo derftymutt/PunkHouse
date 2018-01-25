@@ -10,14 +10,19 @@ namespace PunkHouse.Models
         public string Name { get; set; }
         public string Address1 { get; set; }
         public string Address2 { get; set; }
+        public int Zip { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
         public List<HouseMate> HouseMates { get; set; }
         public List<Expense> Expenses { get; set; }
-        public DateTimeOffset CreationDateTime { get; set; }
+        public DateTimeOffset DateCreated { get; set; }
+        public DateTimeOffset DateModified { get; set; }
 
 
         public House()
         {
-            CreationDateTime = DateTimeOffset.Now;
+            DateCreated = DateTimeOffset.Now;
+            DateModified = DateTimeOffset.Now;
         }
     }
 }
